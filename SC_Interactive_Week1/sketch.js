@@ -3,7 +3,7 @@ var shielfImg;
 var manShoesImg;
 var womanShoesImg;
 var words = ["direction", "one", "blessin'", "sunrise", "darkest", "feeling", "two", "slowly", "fit me", "nibble", "ears", "Baby",
-  "lie", "three", "arms", "silence", "hours", "stare", "body", "loving", "kiss", "four", "error", "feelings", "asleep", "illogical","imagine"
+  "lie", "three", "arms", "silence", "hours", "stare", "body", "loving", "kiss", "four", "error", "feelings", "asleep", "illogical","imagine", "five","six","seven"
 ];
 var numbers = ["one", "two", "three", "four", "five", "six", "seven"
 ];
@@ -23,13 +23,13 @@ function preload() {
 
 function setup() {
   createCanvas(1000, 947);
-
+image(salsaGeneral, 0, 0);
 }
 
 
 function draw() {
   //background(0);
-   image(salsaGeneral, 0, 0);
+
 
 }
 
@@ -38,7 +38,16 @@ function mousePressed() {
   mySound.setVolume(0.1);
   mySound.play();
 
+  randomWord();
 
+}
+
+function randomWord() {
+  console.log("hello");
+  textSize(28);
+  fill(153,43,33);
+  text(words[floor(random(0,25))], random(100,900), random(100,900));
+  //text(numbers[floor(random(0,6))], random(100,900), random(100,900));
 }
 
 function mouseOver() {
