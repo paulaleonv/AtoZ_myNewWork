@@ -45,8 +45,8 @@ function mousePressed() {
 function randomWord() {
   console.log("hello");
   textSize(28);
-  fill(153,43,33);
-  text(words[floor(random(0,25))], random(100,900), random(100,900));
+  fill(random(213,153),random(43,93),random(32,34));
+  text(words[floor(random(0,25))], random(50,900), random(50,750));
   //text(numbers[floor(random(0,6))], random(100,900), random(100,900));
 }
 
